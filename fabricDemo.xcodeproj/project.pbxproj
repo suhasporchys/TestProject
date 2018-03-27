@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21DEC10401FD193BE4896091 /* libPods-fabricDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E329A01A8117253A54976B99 /* libPods-fabricDemo.a */; };
+		84FA5A31206A4A58000C7368 /* DataKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA5A30206A4A58000C7368 /* DataKeeper.swift */; };
 		84FAF458206A2EFE0092288B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAF457206A2EFE0092288B /* AppDelegate.swift */; };
 		84FAF45A206A2EFE0092288B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAF459206A2EFE0092288B /* ViewController.swift */; };
 		84FAF45D206A2EFE0092288B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FAF45B206A2EFE0092288B /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28718E6441BB46B1D083D43F /* Pods-fabricDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fabricDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-fabricDemo/Pods-fabricDemo.release.xcconfig"; sourceTree = "<group>"; };
+		43806683A67EA4BE63E6010F /* Pods-fabricDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fabricDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fabricDemo/Pods-fabricDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		84FA5A30206A4A58000C7368 /* DataKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataKeeper.swift; sourceTree = "<group>"; };
 		84FAF454206A2EFE0092288B /* fabricDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fabricDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FAF457206A2EFE0092288B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84FAF459206A2EFE0092288B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		84FAF45E206A2EFE0092288B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FAF461206A2EFE0092288B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FAF463206A2EFE0092288B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E329A01A8117253A54976B99 /* libPods-fabricDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fabricDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21DEC10401FD193BE4896091 /* libPods-fabricDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FA3749CAB02A067DC512C7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E329A01A8117253A54976B99 /* libPods-fabricDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84FAF44B206A2EFE0092288B = {
 			isa = PBXGroup;
 			children = (
 				84FAF456206A2EFE0092288B /* fabricDemo */,
 				84FAF455206A2EFE0092288B /* Products */,
+				B3F2A29288238D181D15C5DD /* Pods */,
+				6FA3749CAB02A067DC512C7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +73,22 @@
 			children = (
 				84FAF457206A2EFE0092288B /* AppDelegate.swift */,
 				84FAF459206A2EFE0092288B /* ViewController.swift */,
+				84FA5A30206A4A58000C7368 /* DataKeeper.swift */,
 				84FAF45B206A2EFE0092288B /* Main.storyboard */,
 				84FAF45E206A2EFE0092288B /* Assets.xcassets */,
 				84FAF460206A2EFE0092288B /* LaunchScreen.storyboard */,
 				84FAF463206A2EFE0092288B /* Info.plist */,
 			);
 			path = fabricDemo;
+			sourceTree = "<group>";
+		};
+		B3F2A29288238D181D15C5DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43806683A67EA4BE63E6010F /* Pods-fabricDemo.debug.xcconfig */,
+				28718E6441BB46B1D083D43F /* Pods-fabricDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84FAF466206A2EFE0092288B /* Build configuration list for PBXNativeTarget "fabricDemo" */;
 			buildPhases = (
+				699B73154F57DA4D0AF19A6D /* [CP] Check Pods Manifest.lock */,
 				84FAF450206A2EFE0092288B /* Sources */,
 				84FAF451206A2EFE0092288B /* Frameworks */,
 				84FAF452206A2EFE0092288B /* Resources */,
+				5B201EE1EB1F188CBBF91401 /* [CP] Embed Pods Frameworks */,
+				8F8BB7C924C45E83B934F157 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +161,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B201EE1EB1F188CBBF91401 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fabricDemo/Pods-fabricDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		699B73154F57DA4D0AF19A6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fabricDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F8BB7C924C45E83B934F157 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fabricDemo/Pods-fabricDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84FAF450206A2EFE0092288B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				84FAF45A206A2EFE0092288B /* ViewController.swift in Sources */,
+				84FA5A31206A4A58000C7368 /* DataKeeper.swift in Sources */,
 				84FAF458206A2EFE0092288B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +354,7 @@
 		};
 		84FAF467206A2EFE0092288B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43806683A67EA4BE63E6010F /* Pods-fabricDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +370,7 @@
 		};
 		84FAF468206A2EFE0092288B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28718E6441BB46B1D083D43F /* Pods-fabricDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

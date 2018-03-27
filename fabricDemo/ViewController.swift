@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        
+      //  DataKeeper.init(str1: "suhas", dataId: 12)
+        
     }
 
     override func didReceiveMemoryWarning() {
